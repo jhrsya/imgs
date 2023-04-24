@@ -1,9 +1,91 @@
-<mxfile host="app.diagrams.net" modified="2023-04-24T10:19:45.386Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" version="21.2.1" etag="I1yTmqmDmNv87V4l9C0c" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-24T12:09:55.829Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="r1MMwpKLfYfY5YDpD_cC" version="21.2.1" type="github">
   <diagram name="第 1 页" id="7w9DjxZfvz-Yc9EcL_xt">
-    <mxGraphModel>
+    <mxGraphModel dx="794" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y8lU4LStvxikn7TlEe7o-1" target="Y8lU4LStvxikn7TlEe7o-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-1" value="输入AuthV0对象" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y8lU4LStvxikn7TlEe7o-2" target="Y8lU4LStvxikn7TlEe7o-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-2" value="获取nonce，判断nonce不为空，判断数字签名是否为空。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y8lU4LStvxikn7TlEe7o-4" target="Y8lU4LStvxikn7TlEe7o-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-4" value="由nonce拿到Key" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y8lU4LStvxikn7TlEe7o-6" target="Y8lU4LStvxikn7TlEe7o-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-6" value="通过key拿到redis缓冲中的AuthV0，判段是否是空" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y8lU4LStvxikn7TlEe7o-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-8" value="拿到账户account，判断是否是空" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-13" value="YES" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Y8lU4LStvxikn7TlEe7o-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="960" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="410" y="1000" />
+              <mxPoint x="410" y="1000" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y8lU4LStvxikn7TlEe7o-12" target="Y8lU4LStvxikn7TlEe7o-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-12" value="得到twitter，加载出账户信息" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-19" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y8lU4LStvxikn7TlEe7o-16" target="Y8lU4LStvxikn7TlEe7o-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-16" value="根据钱包地址和消息判断签名是否有效" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="890" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-18" value="抛出无效登录异常" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-23" value="YES" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y8lU4LStvxikn7TlEe7o-20" target="Y8lU4LStvxikn7TlEe7o-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="1280" />
+              <mxPoint x="410" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-25" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y8lU4LStvxikn7TlEe7o-20" target="Y8lU4LStvxikn7TlEe7o-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="503" y="1210" />
+              <mxPoint x="503" y="1209" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-20" value="twitter是否为空" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="1169" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-22" value="把LoginV0加入account和jwtToken" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1339" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8lU4LStvxikn7TlEe7o-24" value="设置账户信息，把推特加入" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1179" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
